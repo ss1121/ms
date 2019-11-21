@@ -1,0 +1,123 @@
+.wid250
+  width: 250rpx
+
+
+display-flex($flex-row = row nowrap, $justify-content = flex-start, $align-items = false, $align-content = false)
+  display: flex
+  flex-flow: $flex-row
+  justify-content: $justify-content;
+  if ($align-items != false)
+    align-items: $align-items
+  if ($align-content != false)
+    align-content: $align-content
+
+
+.block
+  display block
+
+.boxer
+  width 100vw
+  height 100vh
+  overflow hidden
+  position relative
+  .stickyBottomBar
+    position fixed
+    left 30rpx
+    bottom 50rpx
+    width 96vw
+    .recodeButton
+      font-size 22px
+      image
+        margin 0 auto
+  .ul
+    width 100%
+    height 100%
+    padding-bottom 60px
+    .item-title
+      font-size 20px
+      margin-left: 18px
+      margin-top 18px
+      display block
+  .item-normal
+    width auto
+    height 180px
+    overflow hidden
+    font-size 14px
+    padding 10px
+    border-radius 5px
+    margin-bottom 20rpx
+    .htitles
+      display-flex(row nowrap, space-between, center, center)
+      width 100%
+      .item-icon
+        font-size 14px
+        &:after
+          content: '\e618'
+
+// shelf-cat-list
+// 分类编辑列表
+.shelf-item-edit-title
+  font-size 30px
+  margin-bottom 10px
+  padding 10px
+
+.shelf-cat-container
+  position relative
+  background-color #fff
+  .shelf-cat-add
+    position absolute
+    right: 10px
+    top: 20px
+    transform:scale(0.7);
+
+.shelf-cat-list
+  border-top 1px solid #efefef
+  border-bottom 1px solid #efefef
+  overflow hidden
+  position relative
+  display flex
+  flex-direction column
+  &:before
+    content: ''
+    height 100%
+    width: 80%
+    background: #efefef
+    position: absolute
+    right 0px
+    top 0px
+  .shelf-cat-list-item
+    position relative
+    white-space: nowrap;
+    transition: all .3s
+    background #fff
+    margin-bottom 1px
+    &.active
+      transition: all .03s
+      box-shadow: 3px 1px 6px #888888;
+      z-index 99999
+    >.htitles
+      display inline-block
+      vertical-align top
+      width 100%
+      .t-item
+        display inline-block
+        vertical-align top
+        padding 18px 0
+        margin-left 10px
+        &:last-child
+          position absolute
+          right 0
+          top 0
+          padding 18px 0
+          padding-right 10px
+    .ul
+      display inline-block
+      white-space nowrap
+      margin: 0
+      padding 0
+      .li-item
+        text-align center
+        padding 18px 0
+        display inline-block
+        vertical-align top
+        overflow hidden

@@ -1,0 +1,175 @@
+  
+//小圆点
+.icon-dot
+  background: red
+  background:#f00;
+  color:#fff;
+  font-size: 10px;
+  width 20rpx
+  height @width
+  border-radius @width
+  ss-display-flex(row nowrap, center, center, center)
+
+.icon-dot-small
+  @extends .icon-dot
+  width 16rpx
+  height @width
+  border-radius @width
+
+.icon-dot-more
+  @extends .icon-dot
+  border-radius: 20rpx
+  padding: 0 4px;
+
+
+//iconfont
+.icon-arrows-r
+  &:after
+    content: '\e618'
+    color: $arrow-default-color
+  
+.icon-arrows-r-absolute
+  @extends .icon-arrows-r
+  ss-display-flex(row nowrap, flex-start, center)
+  height: 100%
+  &:after
+    font-size: 26rpx
+    width: 20rpx
+    margin-left: 20rpx
+    display: block
+    position: absolute
+    right: 0
+
+.icon-arrows-t
+  &:before
+    content: '\e617'
+.icon-arrows-b
+  &:before
+    content: '\e616'
+
+.icon-silence
+  &:before
+    content: '\e74d'
+
+.icon-1
+  &:before
+    content: '\e6aa'
+.icon-2
+  &:before
+    content: '\e6a6'
+.icon-3
+  &:before
+    content: '\e69d'
+.icon-4
+  &:before
+    content: '\e6a7'
+
+//nav
+.icon-index
+  &:before
+    content: '\e61e'
+.icon-about
+  &:before
+    content: '\e601'
+
+
+//tabs menu 
+.icon-menu-1
+  &:before
+    content: '\e61f'
+.icon-menu-2
+  &:before
+    content: '\e655'
+.icon-menu-3
+  &:before
+    content: '\e60c'
+.icon-menu-4
+  &:before
+    content: '\e613'
+
+.icon-eye
+  &:before
+    content: '\e65d'
+
+.icon-close-eye
+  &:before
+    content: '\e65e'
+
+
+
+//css3 icon
+.c3-icon-arrow-right
+  position: relative;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+  &:before
+    content: '';
+    position: absolute;
+    right: 1px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+
+.icon-nav
+  &:before
+    content: '\e62b'
+    font-size: 18px
+
+.icon-arrow-right-circle
+  width: 100rpx
+  height: @width
+  border-radius: @width
+  border: 3rpx solid $color-border-3
+  color: $color-border-3
+  text-align: center
+  line-height: @width
+  font-size: 30px
+  &:before
+    content: '\e64a'
+  &.small
+    width: 60rpx
+    height: @width
+    border-radius: @width
+    border-color: #ccc
+    color: #ccc
+    line-height: @width
+    font-size: 16px
+.icon-arrow-left-circle
+  @extends .icon-arrow-right-circle
+  &:before
+    display: block
+    transform: rotate(180deg)
+
+
+.icon-arror-top-solid
+  &:before
+    content: '\e6b0'
+    color: #d4d4d4
+    font-size: 12px
+  &.absolute
+    position: absolute
+    top: -14px
+    left: 0 
+    width: calc(100% / 11);
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    text-align: center
+
+.icon-dw
+  &:before
+    content: '\e63e'
+    display: block
+    font-size: 36rpx
+
+.icon-right
+  &:before
+    content: '\e660'
+
+.icon-star
+  &:before
+    content: '\e676'

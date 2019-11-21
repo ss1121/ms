@@ -1,0 +1,101 @@
+.wid250
+  width: 250rpx
+
+
+display-flex($flex-row = row nowrap, $justify-content = flex-start, $align-items = false, $align-content = false)
+  display: flex
+  flex-flow: $flex-row
+  justify-content: $justify-content;
+  if ($align-items != false)
+    align-items: $align-items
+  if ($align-content != false)
+    align-content: $align-content
+
+
+.block
+  display block
+
+swiper
+  height 100%
+  // .wx-swiper-dots.wx-swiper-dots-horizontal
+  //   margin-bottom: 2rpx;
+  // .wx-swiper-dot
+  //   width:40rpx;
+  //   display: inline-flex;
+  //   height: 10rpx;
+  //   margin-left: 10rpx;
+  //   justify-content:space-between;
+  // .wx-swiper-dot
+  //   &:before
+  //     content: '';
+  //     flex-grow: 1; 
+  //     background: rgba(255,255,255,0.8);
+  //     border-radius: 8rpx
+  // .wx-swiper-dot-active
+  //   &:before
+  //     background:rgba(244,0,0,0.8);
+
+.boxer
+  width 100vw
+  height 100vh
+  overflow hidden
+  position relative
+  .stickyBottomBar
+    position fixed
+    left 30rpx
+    bottom 50rpx
+    width 96vw
+    .recodeButton
+      font-size 22px
+      image
+        margin 0 auto
+  .ul
+    width 100%
+    height 100%
+    padding-bottom 60px
+    .item-title
+      font-size 20px
+      margin-left: 18px
+      margin-top 18px
+      display block
+  .item-normal
+    width auto
+    height 180px
+    overflow hidden
+    font-size 14px
+    padding 10px
+    border-radius 5px
+    margin-bottom 20rpx
+    .htitles
+      display-flex(row nowrap, space-between, center, center)
+      width 100%
+      .item-icon
+        font-size 14px
+        &:after
+          content: '\e618'
+
+// shelf-cat-list
+// 分类编辑列表
+.shelf-item-edit-title
+  font-size 30px
+  margin-bottom 10px
+  padding 10px
+
+.shelf-cat-container
+  background-color #fff
+  .input-container
+    font-size 12px
+
+
+.shelf-cat-list
+  border-top 1px solid #ccc
+  border-bottom 1px solid #ccc
+  padding 0 14px 0 10px;
+  .shelf-cat-list-item
+    padding 10px 0;
+    border-bottom 1px solid red
+    &:last-child
+      border-bottom: none
+    .htitles
+      display:flex
+      justify-content: space-between

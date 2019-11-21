@@ -1,0 +1,35 @@
+<wxs module="inner">
+
+function log(param){
+  console.log(JSON.stringify(param))
+}
+module.exports = {
+  log: log
+}
+
+</wxs>
+<view class="boxer">
+  <view wx:if="{{siteInfo}}" class="site-info">
+    <view class="username">
+      {{siteInfo.username}}
+    </view>
+    <view class="descript">
+      {{siteInfo.descript}}
+    </view>
+  </view>
+  <ui-shelf dataSource="{{shelfs}}" />
+  <ui-item item="{{stickyBottomBar}}" />
+  <action-side item="{{modal}}">
+    <block wx:if="{{modal.slot}}">
+      <view style="display: flex; ">
+        <button bindtap="onCancelGetUserInfo" type="default" style="margin-top: 40px; width: 38%;">
+          取消
+        </button>
+        <button size="default" type="primary" style="margin-top: 40px; width: 38%;" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" >
+          确认登录
+        </button>
+      </view>
+    </block>
+  </action-side>
+  <ui-pop item="{{popData}}"/>
+</view>

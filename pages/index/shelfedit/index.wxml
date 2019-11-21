@@ -1,0 +1,4 @@
+<view class="boxer">
+  <ui-item item="{{modalEdit}}" />
+  <!-- <ui-item item="{{stickyBottomBar}}" /> -->
+</view>

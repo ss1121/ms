@@ -1,0 +1,85 @@
+
+.border-default
+  border: 2rpx solid $color-border
+  &.active
+    border-color: red
+
+.border-primary
+  border: 2rpx solid $color-border-2
+
+
+.bt-default
+  border-top: 2rpx solid $color-border
+.bb-default
+  border-bottom: 2rpx solid $color-border
+.bl-default
+  border-left: 2rpx solid $color-border
+
+.bb-e3e3e3-hkv
+  .hkv
+    border-bottom: 2rpx solid $color-border
+
+.bb-e3e3e3-item
+  &:last-child
+    .item-line
+      border-bottom: none
+  >.item-line
+    border-bottom: 1px solid $color-border
+
+
+
+.br-e3e3e3-li
+  >.item-line
+    border-left: 1rpx solid $color-border
+    &:first-child
+      border-left: none
+
+.bb-e3e3e3-list-hbody
+  >view
+    &:last-child
+      .hbody
+        border-bottom: none
+  .hbody
+    border-bottom: 1px solid $color-border
+
+
+.box-shadow
+  box-shadow: 0 10rpx 12rpx rgba(21,61,106,0.03)
+
+.bs-e3e3e3
+  @extends .box-shadow
+  &:last-child
+    box-shadow: inherit
+
+.bs-e3e3e3-list
+  >.item-li
+    box-shadow: 0 10rpx 12rpx rgba(21,61,106,0.03)
+    &:last-child
+      box-shadow: inherit
+
+.bb-e3e3e3-list-hkv
+  >view
+    &:last-child
+      .hkv
+        border-bottom: none
+  .hkv
+    border-bottom: 1rpx solid $color-border
+
+.bb-e3e3e3-item-line
+  &:last-child
+    >.item-line
+      border-bottom: none
+  >.item-line
+    border-bottom: 1rpx solid $color-border
+
+
+.br-10-r
+  border-radius: 10rpx
+.brtr-10-r
+  border-radius: 10rpx 10rpx 0 0
+.brbl-10-r
+  border-radius: 0 0 10rpx 10rpx
+.brtl-10-r
+  border-radius: 10rpx 0 0 10rpx
+.brrb-10-r
+  border-radius: 0 10rpx 10rpx 0

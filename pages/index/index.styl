@@ -1,0 +1,288 @@
+.wid250
+  width: 250rpx
+
+::-webkit-scrollbar
+  width: 0;
+  height: 0;
+  color: transparent;
+
+display-flex($flex-row = row nowrap, $justify-content = flex-start, $align-items = false, $align-content = false)
+  display: flex
+  flex-flow: $flex-row
+  justify-content: $justify-content;
+  if ($align-items != false)
+    align-items: $align-items
+  if ($align-content != false)
+    align-content: $align-content
+
+
+.block
+  display block
+
+swiper
+  height 100%
+
+.boxer
+  width 100vw
+  height 100vh
+  // height 100%
+  overflow hidden
+  position relative
+  .actionSide-pop
+    box-shadow 7px 7px 10px rgba(136,136,136, .8)
+    .popMedia
+      margin: 20rpx
+      width: 100%
+      height 87%
+      margin-top:30px
+      overflow hidden
+      .htitle
+        white-space: pre-wrap;
+        font-size 16px
+        font-weight bold
+      image
+        margin-top 10px
+        width 94%
+  .stickyBottomBar
+    position relative
+    height 80px
+    position fixed
+    background-color #fff
+    left 0
+    bottom 0
+    width 100vw
+    box-shadow 1px -1px 5px rgba(136,136,136, .8)
+    .recodeButton
+      font-size 22px
+      image
+        margin 0 auto
+        margin-top 5px
+        width 50px
+        height 50px
+  .ul
+    width 100%
+    height 100%
+    .level0
+      &:last-child
+        &:after
+          content: ' '
+          display block
+          height 100px
+          width 100%
+    .item-title
+      font-size 20px
+      margin-left: 18px
+      margin-top 10px
+      display block
+  .item-normal
+    width auto
+    height 180px
+    overflow hidden
+    font-size 14px
+    padding 10px
+    border-radius 5px
+    margin-bottom 20rpx
+    .htitles
+      display-flex(row nowrap, space-between, center, center)
+      width 100%
+      .item-icon
+        font-size 14px
+        &:after
+          content: '\e618'
+
+
+
+shelf()
+  .d-swiper-ul
+    /*
+     * 一列货架
+    */
+    height 390rpx
+    white-space: nowrap;
+    /*
+     * 单项货架
+    */
+    .d-swiper-title
+      color: #fff
+      overflow hidden
+      width 250rpx
+      height 332rpx
+      padding 0
+      font-size 14px
+      display: inline-block;
+      vertical-align: top
+      position relative
+      border-radius 5px
+      margin 0 2px 0 4px
+      margin-top 10px
+      background-color #D7E1EB
+      // box-shadow 3px 3px 5px rgba(136,136,136, .8)
+      &:first-child
+        margin-left 10px
+      &:last-child
+        margin-right 12px
+      .htitles
+        display flex
+        flex-direction column
+      /*
+       * 单项货架-属性
+      */  
+      .hfooter
+        padding 10rpx
+        position absolute
+        left 0
+        top 70%
+        background-color rgba(80,80,80,.7)
+        width 100%
+        height 30%
+      .shelfItem-property
+        &.caption
+          width 100%
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          // white-space: normal;
+          font-size 12px
+          // font-weight bold
+        &.price
+          font-size 13px
+          color #fff
+          &:before
+            content: '￥'
+        &.serialNumber
+          // 序号栏
+          position absolute
+          top 0
+          left 0
+          width 95%
+          display flex
+          justify-content flex-end
+          font-size 12px
+          display none
+          color #1976D2
+
+        // 添加图片
+        &.plusMedia
+          margin 0 auto
+          width 90%
+          border-radius 5px
+          padding 10rpx
+          margin-top 16px
+
+        // 真实图片
+        &.realMedia
+          margin 0 auto
+          width 100%
+          border-radius 5px
+
+
+shelf()
+
+.shelf-item-edit-title
+  font-size 30px
+.shelf-item-submit
+  text-align center
+  button
+    height:40px;
+    line-height:38px;
+    width:100px;
+    margin:10px auto;
+.shelf-item-upload
+  display:flex
+  justify-content:center
+  margin 20px 0
+  
+
+
+.ds-li-bg-dc251a
+  .d-swiper-title
+    margin-top 10px
+    background #dc251a
+.ds-li-bg-02943e
+  .d-swiper-title
+    margin-top 10px
+    background #02943e
+.ds-li-bg-0092df
+  .d-swiper-title
+    margin-top 10px
+    background #0092df
+.ds-li-bg-e99718
+  .d-swiper-title
+    margin-top 10px
+    background #e99718
+.ds-li-bg-dcdcdc
+  .d-swiper-title
+    margin-top 10px
+    background #dcdcdc
+.list-normal
+  >.li
+    font-size 14px
+    padding 6px 0
+    border-bottom 1px solid #d3d3d3
+    &:last-child
+      border-bottom none
+
+
+/*
+ * 上传默认样式
+*/
+.uploads-container 
+  padding 10px
+  display flex
+  justify-content: flex-start
+  align-items: center
+  .uploads-addone
+    position relative
+    display flex
+    width 60px
+    height 60px
+    justify-content: center
+    align-items: center
+    background-color blue
+    margin-right 10px
+  .uploads-item
+    position relative
+    display flex
+    width 100px
+    height 100px
+    justify-content: center
+    align-items: center
+    border 1px solid #dcdcdc
+    margin-right 10px
+    image.thumbnail
+      width 100%
+    .uploads-delet
+      position absolute
+      right: 0
+      top: 0
+      width 20px
+      height 20px
+      text-align center
+      line-height 20px
+      background-color yellow
+
+
+// switch组件
+.switch-box
+  display flex
+  .switch-element
+    flex 1
+    margin 0 5rpx
+
+.isAdmin
+  position absolute
+  top 14px
+  right 0
+  padding 10rpx
+
+.site-info
+  padding 20rpx
+  display none
+  margin-bottom -12px
+  .username
+    font-size 18px
+    font-weight bold
+  .descript
+    font-size 12px
+    margin-left 3px
+

@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/shelfedit/index",
+    "pages/index/siteconfig/index",
+    "pages/index/shelfcatlist/index",
+    "pages/index/shelfcatedit/index",
+    "pages/logs/logs"
+  ],
+  "usingComponents": {
+    "ui-item": "/components/aotoo/item/index",
+    "ui-list": "/components/aotoo/list/index",
+    "ui-tree": "/components/aotoo/tree/index",
+    "action-side": "/components/actionSide/index",
+    "ui-pop": "/components/actionSide/index",
+    "ui-tab": "/components/tab/index",
+    "ui-form": "/components/form/index",
+    "ui-collapse": "/components/collapse/index",
+    "ui-uploads": "/components/uploads/index",
+    "ui-shelf": "/components/shelf/index",
+    "ui-slip": "/components/slip/index",
+    "ui-markit": "/components/markit/index",
+    "ui-switch": "/components/switch/index"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "what wrong",
+    "navigationBarTextStyle":"black"
+  }
+}
